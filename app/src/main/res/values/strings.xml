@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">DOCUMENTS_REWRITE</string>
+    <string name="app_name">DOCUMENTS</string>
+    <!-- Authorization's strings -->
+    <string name="documents">Documents</string>
+    <string name="login_button">LOG IN</string>
+    <string name="login">Log in</string>
+    <string name="register">Register</string>
+    <string name="register_button">REGISTER</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="send_button">Send</string>
+
+    <!--Hints-->
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="username">Username</string>
+
 </resources>
