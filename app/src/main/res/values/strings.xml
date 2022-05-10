@@ -16,5 +16,7 @@
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="username">Username</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
 </resources>

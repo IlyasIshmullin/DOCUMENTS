@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="settings">
+
+        <menu>
+            <item android:title="Contacts"
+                    android:id="@+id/contactsFragment"
+                android:icon="@drawable/ic_people_svgrepo_com"/>
+
+            <item android:title="Settings"
+                android:id="@+id/settingsFragment"
+                android:icon="@drawable/ic_settings_svgrepo_com"/>
+        </menu>
+
+    </item>
+
+    <item android:title="About APP">
+
+        <menu>
+            <item android:title="Invite Friends"
+                android:id="@+id/inviteFriendsFragment"
+                android:icon="@drawable/ic_add_user_svgrepo_com"/>
+
+            <item android:title="About Documents"
+                android:id="@+id/aboutDocumentsFragment"
+                android:icon="@drawable/ic_question_svgrepo_com"/>
+        </menu>
+
+    </item>
+
+
+</menu>

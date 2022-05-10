@@ -3,6 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_documents_svgrepo_com.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_people_svgrepo_com.xml" value="0.156" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/selector_bottom_navigation.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/about_documents_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_authorization.xml" value="0.15670289855072464" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/app_bar_layout.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/app_bar_main.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/contacts_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/content_main.xml" value="0.152" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/documents_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/favourite_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_authorization.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_fill_initials.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_register.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_reset_password.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/invite_friens_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/nav_header.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/profile_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/settings_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/app_bar_menu.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/nav_drawer_menu.xml" value="0.1" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCUMENTS_REWRITE/app/src/main/res/layout/activity_main.xml" value="0.8" />
         <entry key="..\:/Users/n/StudioProjects/DOCUMENTS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
         <entry key="..\:/Users/n/StudioProjects/DOCUMENTS/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1945" />
