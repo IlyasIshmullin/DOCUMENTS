@@ -1,6 +1,10 @@
 package com.example.documents_rewrite.authorization;
 
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_IS_LOGIN;
+import static com.example.documents_rewrite.SplashActivity.profile;
+
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -38,7 +42,6 @@ public class AuthorizationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_authorization, container, false);
         // Init firebase authorization
         firebaseAuth = FirebaseAuth.getInstance();
-
         // Init buttons
         registerFragmentButton = view.findViewById(R.id.register_fragment_button);
         forgotPassword = view.findViewById(R.id.forgot_password_button);
@@ -73,7 +76,8 @@ public class AuthorizationFragment extends Fragment {
             firebaseAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(task -> {
                         if(task.isSuccessful()){
-                            //is authorized
+                            SharedPreferences.Editor editor = profile.edit();
+                            editor.putBoolean(APP_PREFERENCES_IS_LOGIN, true).apply();
                             startActivity(new Intent(getActivity(), MainActivity.class));
                             getActivity().finish();
                         }

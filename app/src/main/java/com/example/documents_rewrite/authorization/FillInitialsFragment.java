@@ -1,6 +1,10 @@
 package com.example.documents_rewrite.authorization;
 
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_IS_LOGIN;
+import static com.example.documents_rewrite.SplashActivity.profile;
+
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -51,7 +55,8 @@ public class FillInitialsFragment extends Fragment {
         sendInitialsButton.setOnClickListener(view1 -> {
             // TODO User newUser = new User(name, surname, username);
             // TODO data in DB
-            // TODO is authorized
+            SharedPreferences.Editor editor = profile.edit();
+            editor.putBoolean(APP_PREFERENCES_IS_LOGIN, true).apply();
             startActivity(new Intent(getActivity(), MainActivity.class));
             getActivity().finish();
         });

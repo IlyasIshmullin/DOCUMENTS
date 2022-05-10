@@ -2,6 +2,7 @@ package com.example.documents_rewrite.authorization;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.example.documents_rewrite.R;
