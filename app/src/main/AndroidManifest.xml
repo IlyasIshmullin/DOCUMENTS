@@ -11,19 +11,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".authorization.AuthorizationActivity"
-            android:exported="true">
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SplashActivity"
-            android:exported="false"
-            android:theme="@style/SplashScreen">
 
-        </activity>
         <activity
             android:name=".mainApplication.MainActivity"
             android:exported="false">

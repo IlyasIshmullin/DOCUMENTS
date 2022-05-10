@@ -1,5 +1,8 @@
 package com.example.documents_rewrite.authorization;
 
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_IS_LOGIN;
+import static com.example.documents_rewrite.SplashActivity.profile;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
