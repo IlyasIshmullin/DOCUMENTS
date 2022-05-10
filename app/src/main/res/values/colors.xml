@@ -5,7 +5,7 @@
     <color name="md_theme_light_onPrimaryContainer">#00174C</color>
     <color name="md_theme_light_secondary">#3756C2</color>
     <color name="md_theme_light_onSecondary">#FFFFFF</color>
-    <color name="md_theme_light_secondaryContainer">#DBE1FF</color>
+    <color name="md_theme_light_secondaryContainer">#5D8DFF</color>
     <color name="md_theme_light_onSecondaryContainer">#001356</color>
     <color name="md_theme_light_tertiary">#1960A5</color>
     <color name="md_theme_light_onTertiary">#FFFFFF</color>
@@ -17,7 +17,7 @@
     <color name="md_theme_light_onErrorContainer">#410E0B</color>
     <color name="md_theme_light_background">#FFFBFE</color>
     <color name="md_theme_light_onBackground">#1C1B1F</color>
-    <color name="md_theme_light_surface">#FFFBFE</color>
+    <color name="md_theme_light_surface">#F5F5F5</color>
     <color name="md_theme_light_onSurface">#1C1B1F</color>
     <color name="md_theme_light_surfaceVariant">#E7E0EC</color>
     <color name="md_theme_light_onSurfaceVariant">#49454F</color>
@@ -55,4 +55,6 @@
     <color name="md_theme_dark_inversePrimary">#0555D5</color>
     <color name="md_theme_dark_shadow">#000000</color>
     <color name="md_theme_dark_primaryInverse">#0555D5</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
 </resources>

@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.documents_rewrite.MainActivity;
+import com.example.documents_rewrite.mainApplication.MainActivity;
 import com.example.documents_rewrite.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;

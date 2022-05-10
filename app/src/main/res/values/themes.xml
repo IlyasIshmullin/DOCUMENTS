@@ -26,6 +26,7 @@
         <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_primaryInverse</item>
+
     </style>
 
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
@@ -38,4 +39,10 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <style name="AppTheme.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="Theme.Documents_OKAY.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

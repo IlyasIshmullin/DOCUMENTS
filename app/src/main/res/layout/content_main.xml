@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_full"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="132dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="?attr/colorPrimarySurface"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="CREATE"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_camera"
+        android:layout_width="132dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="?attr/colorPrimarySurface"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="scan"
+        android:visibility="invisible"
+        app:icon="@drawable/ic_scan_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintEnd_toEndOf="@id/btn_add" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_download"
+        android:layout_width="132dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="?attr/colorPrimarySurface"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="download"
+        android:visibility="invisible"
+        app:icon="@drawable/ic_download_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="@id/btn_camera"
+        app:layout_constraintEnd_toEndOf="@id/btn_camera" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemRippleColor="@color/md_theme_light_error"
+        android:fitsSystemWindows="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
