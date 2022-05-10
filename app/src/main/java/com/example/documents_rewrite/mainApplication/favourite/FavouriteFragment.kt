@@ -26,7 +26,6 @@ class FavouriteFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar?.title = "Documents"
 
         viewModel = ViewModelProvider(this).get(FavouriteViewModel::class.java)
         // TODO: Use the ViewModel

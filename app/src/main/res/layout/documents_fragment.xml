@@ -37,21 +37,21 @@
         android:focusable="true"
         android:text="scan"
         android:layout_marginBottom="64dp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:icon="@drawable/ic_scan_svgrepo_com"
         app:layout_constraintBottom_toBottomOf="@id/documents_add_fab"
         app:layout_constraintEnd_toEndOf="@id/documents_add_fab" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/documents_download_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="121dp"
+        android:layout_height="53dp"
         android:layout_marginBottom="64dp"
         android:backgroundTint="?attr/colorPrimarySurface"
         android:clickable="true"
         android:focusable="true"
         android:text="download"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:icon="@drawable/ic_download_svgrepo_com"
         app:layout_constraintBottom_toBottomOf="@id/documents_scan_fab"
         app:layout_constraintEnd_toEndOf="@id/documents_scan_fab" />

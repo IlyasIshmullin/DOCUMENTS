@@ -2,6 +2,7 @@ package com.example.documents_rewrite.mainApplication.documents
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
@@ -39,12 +40,13 @@ class DocumentsFragment : Fragment() {
         _binding = DocumentsFragmentBinding.inflate(inflater, container, false)
         setHasOptionsMenu(true)
         FAB()
+
+
         return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar?.title = "Documents"
 
         viewModel = ViewModelProvider(this).get(DocumentsViewModel::class.java)
         // TODO: Use the ViewModel
@@ -58,11 +60,11 @@ class DocumentsFragment : Fragment() {
 
         fun setClickable(clicked: Boolean) {
             if(!clicked) {
-                scan_btn.isClickable = false
-                download_btn.isClickable = false
-            } else {
                 scan_btn.isClickable = true
                 download_btn.isClickable = true
+            } else {
+                scan_btn.isClickable = false
+                download_btn.isClickable = false
             }
         }
 
@@ -98,13 +100,15 @@ class DocumentsFragment : Fragment() {
         add_btn.setOnClickListener {
             onAddButtonClicked()
         }
+
         scan_btn.setOnClickListener {
+            Log.d("Documents", "SCAN_FAB")
             Toast.makeText(context, "scanner", Toast.LENGTH_LONG).show()
         }
 
         download_btn.setOnClickListener {
+            Log.d("Documents", "DOWNLOAD_FAB")
             Toast.makeText(context, "Download", Toast.LENGTH_LONG).show()
-
         }
         return null
     }

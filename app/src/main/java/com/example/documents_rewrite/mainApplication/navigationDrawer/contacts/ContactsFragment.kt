@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
@@ -21,8 +22,7 @@ class ContactsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        (activity as AppCompatActivity).supportActionBar?.title = "Contacts"
-
+        setHasOptionsMenu(true)
         return inflater.inflate(R.layout.contacts_fragment, container, false)
     }
 
@@ -31,6 +31,10 @@ class ContactsFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(ContactsViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+    override fun onPrepareOptionsMenu(menu: Menu) {
+        super.onPrepareOptionsMenu(menu)
+        menu.findItem(R.id.nav_search).setVisible(false)
     }
 
 }

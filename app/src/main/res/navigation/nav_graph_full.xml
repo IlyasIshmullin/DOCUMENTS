@@ -7,36 +7,36 @@
     <fragment
         android:id="@+id/documentsFragment"
         android:name="com.example.documents_rewrite.mainApplication.documents.DocumentsFragment"
-        android:label="documents_fragment"
+        android:label="Documents"
         tools:layout="@layout/documents_fragment" />
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.example.documents_rewrite.mainApplication.favourite.FavouriteFragment"
-        android:label="favourite_fragment"
+        android:label="Favourite"
         tools:layout="@layout/favourite_fragment" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.documents_rewrite.mainApplication.profile.ProfileFragment"
-        android:label="profile_fragment"
+        android:label="Profile"
         tools:layout="@layout/profile_fragment" />
     <fragment
         android:id="@+id/contactsFragment"
         android:name="com.example.documents_rewrite.mainApplication.navigationDrawer.contacts.ContactsFragment"
-        android:label="contacts_fragment"
+        android:label="Contacts"
         tools:layout="@layout/contacts_fragment" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.documents_rewrite.mainApplication.navigationDrawer.settings.SettingsFragment"
-        android:label="settings_fragment"
+        android:label="Settings"
         tools:layout="@layout/settings_fragment" />
     <fragment
         android:id="@+id/inviteFriendsFragment"
         android:name="com.example.documents_rewrite.mainApplication.navigationDrawer.inviteFriends.InviteFriendsFragment"
-        android:label="invite_friens_fragment"
+        android:label="Invite"
         tools:layout="@layout/invite_friens_fragment" />
     <fragment
         android:id="@+id/aboutDocumentsFragment"
         android:name="com.example.documents_rewrite.mainApplication.navigationDrawer.aboutDocuments.AboutDocumentsFragment"
-        android:label="about_documents_fragment"
+        android:label="About Documents"
         tools:layout="@layout/about_documents_fragment" />
 </navigation>

@@ -1,14 +1,16 @@
 package com.example.documents_rewrite.mainApplication.navigationDrawer.settings
 
 import android.content.Intent
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.documents_rewrite.R
+import com.example.documents_rewrite.SplashActivity
 import com.example.documents_rewrite.authorization.AuthorizationActivity
 import com.example.documents_rewrite.databinding.SettingsFragmentBinding
 
@@ -27,10 +29,13 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setHasOptionsMenu(true)
         _binding = SettingsFragmentBinding.inflate(inflater, container, false)
 
 
         binding.settingsExitButton.setOnClickListener {
+            val editor = SplashActivity.profile.edit()
+            editor.putBoolean(SplashActivity.APP_PREFERENCES_IS_LOGIN, false).apply()
             val intent = Intent(context, AuthorizationActivity::class.java)
             startActivity(intent)
             activity?.finish()
@@ -41,7 +46,6 @@ class SettingsFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar?.title = "Settings"
         viewModel = ViewModelProvider(this).get(SettingsViewModel::class.java)
         // TODO: Use the ViewModel
     }
@@ -51,4 +55,8 @@ class SettingsFragment : Fragment() {
         _binding = null
     }
 
+    override fun onPrepareOptionsMenu(menu: Menu) {
+        super.onPrepareOptionsMenu(menu)
+        menu.findItem(R.id.nav_search).setVisible(false)
+    }
 }
