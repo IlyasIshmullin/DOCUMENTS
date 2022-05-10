@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.documents_rewrite.MainActivity;
 import com.example.documents_rewrite.R;
@@ -58,23 +59,26 @@ public class AuthorizationFragment extends Fragment {
 
         logInButton.setOnClickListener(view13 -> {
             if(!authorizationUser(edAuthorizationEmail.getText().toString(), edAuthorizationPassword.getText().toString())){
-                authorizationEmailTextLayout.setError("Check your email!");
-                authorizationPasswordTextLayout.setError("Password must be at least 8 characters long!");
+                authorizationEmailTextLayout.setError("Enter your email");
+                authorizationPasswordTextLayout.setError("Enter password");
             }
         });
         return view;
     }
 
     protected boolean authorizationUser(String email, String password){
-        if(email.isEmpty() || password.length() < 8){
+        if(email.isEmpty() || password.isEmpty()){
              return false;
         } else{
             firebaseAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(task -> {
                         if(task.isSuccessful()){
+                            //is authorized
                             startActivity(new Intent(getActivity(), MainActivity.class));
                             getActivity().finish();
                         }
+                        else
+                            Toast.makeText(getActivity(), "Please, check email and password", Toast.LENGTH_LONG).show();
                     });
         }
         return true;

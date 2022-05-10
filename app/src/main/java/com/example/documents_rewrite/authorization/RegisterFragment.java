@@ -65,8 +65,8 @@ public class RegisterFragment extends Fragment {
                 else if(!edRegisterPassword.getText().toString().equals(edRegisterConfirmPassword.getText().toString()))
                     registerConfirmPasswordTextLayout.setError("Passwords must be the same");
                 else {
-                    registerNewUser(edRegisterEmail.getText().toString(), edRegisterPassword.getText().toString());
-                    Navigation.findNavController(view).navigate(R.id.action_registerFragment_to_fillInitialsFragment);
+                    registerNewUser(edRegisterEmail.getText().toString(),
+                            edRegisterPassword.getText().toString(), view);
                 }
             }
         });
@@ -75,11 +75,13 @@ public class RegisterFragment extends Fragment {
         return view;
     }
 
-    protected void registerNewUser(String email, String password){
+    protected void registerNewUser(String email, String password, View view){
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
-            if(!task.isSuccessful()){
+            if(task.isSuccessful())
+                Navigation.findNavController(view).navigate(R.id.action_registerFragment_to_fillInitialsFragment);
+            else
                 Toast.makeText(getActivity(), "Please, check email and password", Toast.LENGTH_LONG).show();
-            }
+
         });
     }
 }
