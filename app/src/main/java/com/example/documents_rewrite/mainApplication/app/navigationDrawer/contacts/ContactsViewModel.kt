@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.navigationDrawer.contacts
+package com.example.documents_rewrite.mainApplication.app.navigationDrawer.contacts
 
 import androidx.lifecycle.ViewModel
 

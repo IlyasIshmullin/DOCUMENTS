@@ -1,26 +1,17 @@
-package com.example.documents_rewrite.mainApplication
+package com.example.documents_rewrite.mainApplication.app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import android.view.MenuItem
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.content.ContextCompat
 import androidx.core.view.*
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.*
-import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.example.documents_rewrite.R
 import com.example.documents_rewrite.databinding.ActivityMainBinding
-import com.example.documents_rewrite.mainApplication.navigationDrawer.contacts.ContactsFragment
 import com.google.android.material.color.DynamicColors
 import com.google.android.material.navigation.NavigationView
 
@@ -43,77 +34,13 @@ class MainActivity : AppCompatActivity() {
             .build()
 
 
-        /*setSupportActionBar(binding.mainToolbar)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        setupWithNavController(binding.navigationView, navController)
-
-        binding.navigationView.setNavigationItemSelectedListener(this)
-        visibilityNavElements(navController)*/
-        //binding.navigationView.setNavigationItemSelectedListener(this)
-
         setSupportActionBar(binding.mainToolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        //binding.navigationView.setupWithNavController(navController)
-        //setupActionBarWithNavController(navController, appBarConfiguration)
-        //binding.navigationView.setupWithNavController(navController)
 
-       /* val actionToggle = ActionBarDrawerToggle(
-            this@MainActivity,
-            binding.drawerLayout,
-            R.string.open,
-            R.string.close
-        )
-
-        binding.drawerLayout.addDrawerListener(actionToggle)
-        actionToggle.syncState()
-        binding.navigationView.setNavigationItemSelectedListener(this)
-
-        */
-
-        //binding.mainToolbar.setupWithNavController(navController, appBarConfiguration)
-
-        /*val actionBarDrawerToggle: ActionBarDrawerToggle = ActionBarDrawerToggle(
-            this,
-            binding.drawerLayout,
-            binding.mainToolbar,
-            R.string.open,
-            R.string.close
-        )
-        binding.drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.syncState()
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-         */
-
-        //binding.bottomNavigationView.setupWithNavController(navController)
         visibilityNavElements(navController)
     }
-
-
-    /*override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.nav_contacts -> {
-                Log.d("MAINAPP", "INVISIBLITY_item")
-                Toast.makeText(this, "TOAST", Toast.LENGTH_LONG).show()
-                hideBottomNavigation()
-            }
-
-            R.id.nav_settings -> {
-                Toast.makeText(this, "TOAST_set", Toast.LENGTH_LONG).show()
-                //hideBothNavigation()
-            }
-            R.id.nav_invite_frinends -> {
-                hideBottomNavigation()
-            }
-            R.id.nav_about_documents -> {
-                hideBottomNavigation()
-            }
-        }
-        binding.drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }*/
 
 
     //Listen for the change in fragment (navigation) and hide or show drawer or bottom navigation accordingly if required

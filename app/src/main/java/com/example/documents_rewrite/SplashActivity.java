@@ -6,10 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.documents_rewrite.authorization.AuthorizationActivity;
-import com.example.documents_rewrite.mainApplication.MainActivity;
+import com.example.documents_rewrite.mainApplication.app.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
     public static SharedPreferences profile;

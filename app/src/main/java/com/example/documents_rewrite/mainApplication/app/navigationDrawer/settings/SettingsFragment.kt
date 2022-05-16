@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.navigationDrawer.settings
+package com.example.documents_rewrite.mainApplication.app.navigationDrawer.settings
 
 import android.content.Intent
 import android.os.Bundle

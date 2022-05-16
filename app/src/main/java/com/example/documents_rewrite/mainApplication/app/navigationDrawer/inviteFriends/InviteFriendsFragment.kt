@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.navigationDrawer.inviteFriends
+package com.example.documents_rewrite.mainApplication.app.navigationDrawer.inviteFriends
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

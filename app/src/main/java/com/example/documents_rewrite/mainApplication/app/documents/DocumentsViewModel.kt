@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.documents
+package com.example.documents_rewrite.mainApplication.app.documents
 
 import androidx.lifecycle.ViewModel
 

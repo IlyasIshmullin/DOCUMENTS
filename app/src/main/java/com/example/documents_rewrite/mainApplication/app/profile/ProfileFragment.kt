@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.profile
+package com.example.documents_rewrite.mainApplication.app.profile
 
 import android.graphics.Color
 import androidx.lifecycle.ViewModelProvider

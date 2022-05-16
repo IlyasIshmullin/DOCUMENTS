@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.navigationDrawer.aboutDocuments
+package com.example.documents_rewrite.mainApplication.app.navigationDrawer.aboutDocuments
 
 import androidx.lifecycle.ViewModel
 
