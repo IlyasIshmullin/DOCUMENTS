@@ -34,10 +34,18 @@ android {
         viewBinding true
         dataBinding true
     }
+    packagingOptions {
+        pickFirst "**/lib/**"
+    }
+    rootProject.ext.ffmpegKitPackage = "video"
 }
 dependencies {
-//
-////"    //PIE CHART FOR PROFILE
+    //implementation 'com.github.kuamanet:android-document-scanner:Tag'
+
+    //SCANNER FOR DOCUMENTS
+    implementation 'com.github.Krobys:document-scanner-fast:1.0.0'
+
+    //PIE CHART FOR PROFILE
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0'
 
     //AVATAR VIEW USING IN PROFILE
@@ -46,6 +54,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.3'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation project(path: ':opencv')
     def nav_version = "2.4.2"
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"

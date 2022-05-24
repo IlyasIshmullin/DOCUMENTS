@@ -6,27 +6,39 @@
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_add_user_svgrepo_com.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.22" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_chat_message_sms_text_svgrepo_com.xml" value="0.1935" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_documents_svgrepo_com.xml" value="0.22" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_email_mail_svgrepo_com.xml" value="0.1935" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_menu_svgrepo_com.xml" value="0.1055" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_message_alt_writing_svgrepo_com.xml" value="0.1055" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_message_square_outline_svgrepo_com.xml" value="0.1935" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_people_svgrepo_com.xml" value="0.156" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_svgfolder.xml" value="0.149" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_telegram_svgrepo_com__1_.xml" value="0.1935" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_whatsapp_logo_variant_svgrepo_com.xml" value="0.1935" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/pavel_durov_background.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/rounded_background.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/rounded_background_profile.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/selector_bottom_navigation.xml" value="0.22" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/splash_screen.xml" value="0.156" />
-        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/about_documents_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/font/gothic.xml" value="0.26" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/about_documents_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_app_scan.xml" value="0.1109375" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_authorization.xml" value="0.15670289855072464" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_main2.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/app_bar_layout.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/app_bar_main.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/contacts_fragment.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/content_main.xml" value="0.152" />
-        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/documents_fragment.xml" value="0.536" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/documents_fragment.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/favourite_fragment.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_authorization.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_fill_initials.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_register.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_reset_password.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/invite_friens_fragment.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/invite_friens_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/layout_image_adapter.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/nav_header.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/profile_fragment.xml" value="0.2" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/settings_fragment.xml" value="0.23385416666666667" />

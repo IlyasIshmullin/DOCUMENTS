@@ -9,8 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.documents_rewrite.R
+import com.example.documents_rewrite.databinding.AboutDocumentsFragmentBinding
+import com.example.documents_rewrite.databinding.ProfileFragmentBinding
+import com.example.documents_rewrite.mainApplication.app.MainActivity
 
 class AboutDocumentsFragment : Fragment() {
+
+    private var _binding: AboutDocumentsFragmentBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = AboutDocumentsFragment()
@@ -22,8 +28,12 @@ class AboutDocumentsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        _binding = AboutDocumentsFragmentBinding.inflate(inflater, container,false)
+
         setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.about_documents_fragment, container, false)
+
+
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

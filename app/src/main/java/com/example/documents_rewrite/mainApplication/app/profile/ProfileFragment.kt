@@ -51,6 +51,14 @@ class ProfileFragment : Fragment() {
         return binding.root
 
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
+        // TODO: Use the ViewModel
+    }
+
     private fun initPieChart() {
         with(binding) {
             pieChartProfile.setUsePercentValues(true)
@@ -68,8 +76,6 @@ class ProfileFragment : Fragment() {
             pieChartProfile.legend.isWordWrapEnabled = true
 
         }
-
-
     }
 
     private fun setDataToPieChart() {
@@ -107,12 +113,7 @@ class ProfileFragment : Fragment() {
 
 
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
     override fun onPrepareOptionsMenu(menu: Menu) {
         super.onPrepareOptionsMenu(menu)

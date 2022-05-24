@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainApplication.app.navigationDrawer.aboutDocuments.AboutDocumentsFragment">
+    tools:context=".mainApplication.app.navigationDrawer.aboutDocuments.AboutDocumentsFragment"
+    android:padding="8dp"
+    android:background="@color/whiteColor">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/gothicregular"
+        android:text="Documents"
+        android:textColor="@color/md_theme_light_primary"
         android:textSize="48sp"
-        android:text="ABOUT DOCS" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_background_profile"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView10">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothicregular"
+            android:text="@string/aboutDocuments"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:text="keep everything in one place"
+        android:textColor="@color/md_theme_light_primary"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

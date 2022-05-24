@@ -31,7 +31,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         app:titleCentered="true"
-                        android:background="#F5F5F5"
+                        android:background="#FFFFFF"
                         app:menu="@menu/app_bar_menu"
                         app:title="Documents"
                         app:titleTextAppearance="?attr/textAppearanceTitleLarge" />

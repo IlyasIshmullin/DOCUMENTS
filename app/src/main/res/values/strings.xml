@@ -7,7 +7,6 @@
     <string name="register">Register</string>
     <string name="register_button">REGISTER</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
-    <string name="send_button">Send</string>
 
     <!--Hints-->
     <string name="email">E-mail</string>
@@ -16,7 +15,6 @@
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="username">Username</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <string name="aboutDocuments"><![CDATA[ "Documents" - mobile app, which deals with centralized document management. Out app can scan any document or download it from file manager in app. Out scanner working with openCV, which helps to scan document perfectly.]]></string>
 
 </resources>

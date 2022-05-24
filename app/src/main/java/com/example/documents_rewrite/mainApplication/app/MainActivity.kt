@@ -14,6 +14,7 @@ import com.example.documents_rewrite.R
 import com.example.documents_rewrite.databinding.ActivityMainBinding
 import com.google.android.material.color.DynamicColors
 import com.google.android.material.navigation.NavigationView
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         visibilityNavElements(navController)
+
     }
 
 

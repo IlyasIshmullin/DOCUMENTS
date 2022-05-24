@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".mainApplication.app.documents.DocumentsFragment">
-
+<!--
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="DOCUS KROKUS"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp" />-->
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/documents_add_fab"
@@ -56,5 +57,16 @@
         app:layout_constraintBottom_toBottomOf="@id/documents_scan_fab"
         app:layout_constraintEnd_toEndOf="@id/documents_scan_fab" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:spanCount="1"
+        tools:itemCount="10"
+        tools:listitem="@layout/layout_image_adapter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
