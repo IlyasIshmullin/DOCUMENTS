@@ -1,6 +1,11 @@
 package com.example.documents_rewrite.authorization;
 
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_DESCRIPTION;
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_EMAIL;
 import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_IS_LOGIN;
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_NAME;
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_SURNAME;
+import static com.example.documents_rewrite.SplashActivity.APP_PREFERENCES_USERNAME;
 import static com.example.documents_rewrite.SplashActivity.profile;
 
 import android.content.Intent;
@@ -20,6 +25,9 @@ import com.example.documents_rewrite.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class FillInitialsFragment extends Fragment {
 
@@ -37,6 +45,8 @@ public class FillInitialsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fill_initials, container, false);
+        // Init firebase database
+        // TODO firebase database
 
         // Init text fields
         nameTextLayout = view.findViewById(R.id.fill_initials_name_text_input_layout);
@@ -54,11 +64,25 @@ public class FillInitialsFragment extends Fragment {
 
         sendInitialsButton.setOnClickListener(view1 -> {
             // TODO User newUser = new User(name, surname, username);
-            // TODO data in DB
-            SharedPreferences.Editor editor = profile.edit();
-            editor.putBoolean(APP_PREFERENCES_IS_LOGIN, true).apply();
-            startActivity(new Intent(getActivity(), MainActivity.class));
-            getActivity().finish();
+            // check for empty
+            if (edName.getText().toString().isEmpty()) {
+                nameTextLayout.setError("Enter name");
+            }
+            else if (edSurname.getText().toString().isEmpty()) {
+                nameTextLayout.setError("Enter surname");
+            }
+            else if (edUsername.getText().toString().isEmpty()){
+                nameTextLayout.setError("Enter username");
+            }
+            else {
+                SharedPreferences.Editor editor = profile.edit();
+                editor.putString(APP_PREFERENCES_NAME, edName.getText().toString()).apply();
+                editor.putString(APP_PREFERENCES_SURNAME, edSurname.getText().toString()).apply();
+                editor.putString(APP_PREFERENCES_USERNAME, edUsername.getText().toString()).apply();
+                editor.putBoolean(APP_PREFERENCES_IS_LOGIN, true).apply();
+                startActivity(new Intent(getActivity(), MainActivity.class));
+                getActivity().finish();
+            }
         });
         return view;
     }

@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_authorization.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_identificate.xml" value="0.264" />
+        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_main.xml" value="0.140625" />
+        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_save_document.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/fragment_authorization.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_add_user_svgrepo_com.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.22" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.22" />
