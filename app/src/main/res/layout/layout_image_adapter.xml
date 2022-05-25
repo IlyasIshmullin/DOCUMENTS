@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="58dp"
+        android:layout_height="39dp"
+        android:src="@drawable/ic_svgfolder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="12dp"
+        android:text="Document folder name"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="979.4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView5" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="KB"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView4"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView4"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="23 Feb 2022"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView6"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="06:22"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView7"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView7" />
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/materialTextView7"
+        app:dividerColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        app:dividerThickness="0.8dp"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
