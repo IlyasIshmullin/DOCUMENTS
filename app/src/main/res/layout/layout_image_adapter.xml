@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="4dp">
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <!--<com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         android:layout_width="58dp"
         android:layout_height="39dp"
@@ -87,6 +87,86 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageOfDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="Document"
+                android:src="@drawable/ic_svgfolder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/documentNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Document folder name"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageOfDocument"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sizeOfDocumentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="979.4 КБ"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/documentNameTV" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="23 Feb 2022"
+                app:layout_constraintStart_toEndOf="@+id/sizeOfDocumentTV"
+                app:layout_constraintTop_toTopOf="@+id/sizeOfDocumentTV" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="06:22"
+                app:layout_constraintStart_toEndOf="@+id/materialTextView22"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView22" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,32 +1,69 @@
 package com.example.documents_rewrite.mainApplication.app.documents
 
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.GridLayout
+//import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import android.widget.Toast
+import androidx.core.content.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.documents_rewrite.R
 import com.example.documents_rewrite.databinding.DocumentsFragmentBinding
 import com.example.documents_rewrite.mainApplication.app.documents.docsLOgic.DocsAdapter
 import com.example.documents_rewrite.mainApplication.app.documents.docsLOgic.DocumentData
+import com.example.documents_rewrite.mainApplication.app.documents.docsLOgic.RealPathUtil
+import java.io.BufferedInputStream
 import java.io.InputStream
+import java.io.OutputStream
 
 
-class DocumentsFragment : Fragment() {
+class DocumentsFragment : Fragment(), SearchView.OnQueryTextListener {
 
-    private lateinit var newRecyclerView: RecyclerView
+//    private val adapter: RecyclerView.Adapter<DocsAdapter.ViewHolder>? = null
+    private val documentsList = ArrayList<DocumentData>()
+    private val adapter = DocsAdapter(documentsList)
+
+    private lateinit var searchView: SearchView
+
+    init {
+        val document = DocumentData(
+            R.drawable.ic_svgfolder,
+            "one"
+        )
+
+
+        val document2 = DocumentData(
+            R.drawable.ic_svgfolder,
+            "two"
+        )
+        documentsList.add(document)
+        documentsList.add(document2)
+        documentsList.add(document)
+        documentsList.add(document2)
+        documentsList.add(document2)
+        documentsList.add(document)
+        documentsList.add(document)
+        documentsList.add(document2)
+    }
+/*
+    private lateinit var RecyclerView: RecyclerView
+    private lateinit var RecyclerAdapter: DocsAdapter*/
+    /*
     private lateinit var newArrayList: ArrayList<DocumentData>
     lateinit var imageId : MutableList<Int>
-    lateinit var text: MutableList<String>
+    lateinit var text: MutableList<String>*/
 
 
     private var _binding: DocumentsFragmentBinding? = null
@@ -53,63 +90,20 @@ class DocumentsFragment : Fragment() {
         setHasOptionsMenu(true)
         FAB()
 
-        imageId = mutableListOf(
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
+        binding.recyclerViewInDocumentsFragment.layoutManager = GridLayoutManager(context, 2)
+        binding.recyclerViewInDocumentsFragment.adapter = adapter
+        binding.recyclerViewInDocumentsFragment.setHasFixedSize(true)
 
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-            R.drawable.ic_svgfolder,
-        )
-
-
-        text = mutableListOf(
-            "one",
-            "two",
-            "three",
-            "four",
-            "five",
-            "Documents folder",
-
-            "one",
-            "two",
-            "three",
-            "four",
-            "five",
-            "Documents folder",
-
-            "one",
-            "two",
-            "three",
-            "four",
-            "five",
-            "Documents folder"
-        )
-
-        recyclerViewUpdate()
+        //recyclerViewUpdate()
 
 
         //Log.d("OPENcv", "SHESH${OpenCVLoader.initDebug()}" )
         return binding.root
     }
 
-    private fun recyclerViewUpdate(){
+  /*  private fun recyclerViewUpdate(){
         newRecyclerView = binding.rvImages
-        newRecyclerView.layoutManager = LinearLayoutManager(context)
+        newRecyclerView.layoutManager = GridLayoutManager(context, 2)
         newRecyclerView.setHasFixedSize(true)
 
         newArrayList = arrayListOf<DocumentData>()
@@ -118,7 +112,7 @@ class DocumentsFragment : Fragment() {
             newArrayList.add(docs)
         }
         newRecyclerView.adapter = DocsAdapter(newArrayList)
-    }
+    }*/
 
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -127,6 +121,8 @@ class DocumentsFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(DocumentsViewModel::class.java)
         // TODO: Use the ViewModel
     }
+
+
 
 
 
@@ -213,29 +209,50 @@ class DocumentsFragment : Fragment() {
                 Toast.makeText(context, "Couldnt take a file", Toast.LENGTH_SHORT).show()
             }
             OpenFileResult.ErrorOpeningFile -> Log.e(TAG, "error opening file")
-            is OpenFileResult.FileWasOpened -> fileIsOpened(result.fileName, result.content)
+            is OpenFileResult.FileWasOpened -> fileIsOpened(result.fileName, result.content, result.Path)
         }
     }
 
-    private fun fileIsOpened(fileName: String, content: InputStream) {
+    private fun fileIsOpened(fileName: String, content: InputStream, Path: String) {
 
         //val fileInfo = requireView().findViewById<TextView>(R.id.openedTextInfo)
         //fileInfo.text = "Opened file $fileName"
 
         //TODO: with migranov to send image to server
-        text.add(fileName)
+        //text.add(fileName)
         //val bufferedImageView = ImageI
-        imageId.add(R.drawable.ic_launcher)
+        //imageId.add(R.drawable.ic_launcher)
         Toast.makeText(context, "File Opened Well", Toast.LENGTH_SHORT).show()
-        recyclerViewUpdate()
+        Toast.makeText(context, Path, Toast.LENGTH_LONG).show()
+        //recyclerViewUpdate()
         content.close()
     }
 
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+
+
+    override fun onQueryTextSubmit(query: String?): Boolean {
+        Log.d("onQuery", "sumbit")
+        adapter.filter.filter(query)
+        return false
+    }
+
+    override fun onQueryTextChange(newText: String?): Boolean {
+        Log.d("onQuery", "change")
+        adapter.filter.filter(newText)
+        return false
+    }
 
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+
 
 }

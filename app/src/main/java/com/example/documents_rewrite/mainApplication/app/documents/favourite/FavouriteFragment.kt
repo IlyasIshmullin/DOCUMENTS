@@ -1,4 +1,4 @@
-package com.example.documents_rewrite.mainApplication.app.favourite
+package com.example.documents_rewrite.mainApplication.app.documents.favourite
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

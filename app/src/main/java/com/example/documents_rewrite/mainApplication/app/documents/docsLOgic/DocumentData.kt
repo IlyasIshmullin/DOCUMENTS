@@ -1,3 +1,12 @@
 package com.example.documents_rewrite.mainApplication.app.documents.docsLOgic
 
-data class DocumentData(var image : Int, var name: String)
+import androidx.annotation.DrawableRes
+import com.example.documents_rewrite.R
+
+data class DocumentData(
+    @DrawableRes
+    val image : Int?,
+    val name: String
+
+)
+

@@ -1,10 +1,12 @@
 package com.example.documents_rewrite.mainApplication.app
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.View
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.*
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -29,8 +31,12 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.nav_host_fragment)
 
-        appBarConfiguration = AppBarConfiguration.Builder(
+       /* appBarConfiguration = AppBarConfiguration.Builder(
             R.id.documentsFragment, R.id.favouriteFragment, R.id.profileFragment)
+            .setOpenableLayout(binding.drawerLayout)
+            .build()*/
+        appBarConfiguration = AppBarConfiguration.Builder(
+            R.id.documentsFragment, R.id.profileFragment)
             .setOpenableLayout(binding.drawerLayout)
             .build()
 
@@ -45,6 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     //Listen for the change in fragment (navigation) and hide or show drawer or bottom navigation accordingly if required
     private fun visibilityNavElements(navController: NavController) {
         navController.addOnDestinationChangedListener { _, destination, _ ->
@@ -56,6 +63,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.settingsFragment -> hideBottomNavigation()
                 R.id.inviteFriendsFragment -> hideBottomNavigation()
                 R.id.aboutDocumentsFragment -> hideBottomNavigation()
+                R.id.imageViewerFragment -> hideBottomNavigation()
+                R.id.editProfileFragment -> {
+                    hideBottomNavigation()
+                    Log.e("EditProfileError", "Error")
+                }
                 else -> showBothNavigation()
             }
         }

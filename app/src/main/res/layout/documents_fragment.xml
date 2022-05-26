@@ -58,15 +58,15 @@
         app:layout_constraintEnd_toEndOf="@id/documents_scan_fab" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvImages"
+        android:id="@+id/recyclerViewInDocumentsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:spanCount="1"
+        app:spanCount="2"
         tools:itemCount="10"
-        tools:listitem="@layout/layout_image_adapter" />
+        tools:listitem="@layout/layout_image_adapter_var2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

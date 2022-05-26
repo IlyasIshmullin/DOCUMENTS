@@ -16,5 +16,7 @@
     <string name="surname">Surname</string>
     <string name="username">Username</string>
     <string name="aboutDocuments"><![CDATA[ "Documents" - mobile app, which deals with centralized document management. Out app can scan any document or download it from file manager in app. Out scanner working with openCV, which helps to scan document perfectly.]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

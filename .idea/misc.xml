@@ -22,6 +22,7 @@
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/selector_bottom_navigation.xml" value="0.22" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/splash_screen.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/font/gothic.xml" value="0.26" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout-v28/profile_fragment.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/about_documents_fragment.xml" value="0.2" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_app_scan.xml" value="0.1109375" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_authorization.xml" value="0.15670289855072464" />
@@ -34,17 +35,21 @@
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/documents_fragment.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/favourite_fragment.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_authorization.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_edit_profile.xml" value="0.152" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_fill_initials.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_personal_info_profile.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_register.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/fragment_reset_password.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/invite_friens_fragment.xml" value="0.4" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/layout_image_adapter.xml" value="0.264" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/layout_image_adapter_var2.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/nav_header.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/profile_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/profile_fragment.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/settings_fragment.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/app_bar_menu.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/app_bar_menu.xml" value="0.264" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/nav_drawer_menu.xml" value="0.1" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/menu/popup_menu_rv.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/mipmap-anydpi-v26/pavel_durov.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/mipmap-anydpi-v26/pavel_durov_round.xml" value="0.1055" />

@@ -8,17 +8,33 @@
         android:id="@+id/documentsFragment"
         android:name="com.example.documents_rewrite.mainApplication.app.documents.DocumentsFragment"
         android:label="Documents"
-        tools:layout="@layout/documents_fragment" />
-    <fragment
-        android:id="@+id/favouriteFragment"
-        android:name="com.example.documents_rewrite.mainApplication.app.favourite.FavouriteFragment"
-        android:label="Favourite"
-        tools:layout="@layout/favourite_fragment" />
+        tools:layout="@layout/documents_fragment" >
+        <action
+            android:id="@+id/action_documentsFragment_to_imageViewerFragment"
+            app:destination="@id/imageViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/favouriteFragment"-->
+<!--        android:name="com.example.documents_rewrite.mainApplication.app.documents.favourite.FavouriteFragment"-->
+<!--        android:label="Favourite"-->
+<!--        tools:layout="@layout/favourite_fragment" />-->
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.documents_rewrite.mainApplication.app.profile.ProfileFragment"
         android:label="Profile"
-        tools:layout="@layout/profile_fragment" />
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/contactsFragment"
         android:name="com.example.documents_rewrite.mainApplication.app.navigationDrawer.contacts.ContactsFragment"
@@ -39,4 +55,27 @@
         android:name="com.example.documents_rewrite.mainApplication.app.navigationDrawer.aboutDocuments.AboutDocumentsFragment"
         android:label="About Documents"
         tools:layout="@layout/about_documents_fragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.documents_rewrite.mainApplication.app.profile.editProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_personalInfoProfileFragment"
+            app:destination="@id/personalInfoProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoProfileFragment"
+        android:name="com.example.documents_rewrite.PersonalInfoProfileFragment"
+        android:label="fragment_personal_info_profile"
+        tools:layout="@layout/fragment_personal_info_profile" />
+    <fragment
+        android:id="@+id/imageViewerFragment"
+        android:name="com.example.documents_rewrite.ImageViewerFragment"
+        android:label="fragment_image_viewer"
+        tools:layout="@layout/fragment_image_viewer" />
 </navigation>

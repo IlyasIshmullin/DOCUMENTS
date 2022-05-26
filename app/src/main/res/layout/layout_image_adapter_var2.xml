@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageOfDocumentVar2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="32dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_svgfolder" />
+
+            <TextView
+                android:id="@+id/documentNameTVvar2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Document"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/popupIcon">
+
+
+                    <!--<com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/sizeOfDocumentTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="979.4 КБ" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/dataOfDocumentTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23 Feb 2022" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/dateOfHoursOfDocumentTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06:22" />
+
+
+-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description" />
+                </LinearLayout>
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/popupIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:clickable="true"
+                    android:contentDescription="More"
+                    android:focusable="true"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,105 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".mainApplication.app.profile.ProfileFragment"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!--<TextView
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="PROFILE"
-        android:textSize="40sp"/>-->
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".mainApplication.app.profile.ProfileFragment"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="159dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/rounded_background_profile"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PROFILE"
+            android:textSize="40sp"/>-->
 
-        <io.getstream.avatarview.AvatarView
-            android:id="@+id/avatarView"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/ic_download_svgrepo_com"
-            app:avatarViewBorderRadius="20dp"
-            app:avatarViewShape="circle"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background_profile"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView"
-            android:layout_width="wrap_content"
+            <io.getstream.avatarview.AvatarView
+                android:id="@+id/avatarView"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ic_download_svgrepo_com"
+                app:avatarViewBorderRadius="20dp"
+                app:avatarViewShape="circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Ilyas Ishmullin"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/avatarView"
+                app:layout_constraintTop_toTopOf="@+id/avatarView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="ilya.ishmullin.24.04.2006@gmail.com"
+                android:textColor="@color/whiteColor"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/avatarView"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Mobile Developer"
+                android:textColor="@color/whiteColor"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                android:typeface="monospace"
+                app:layout_constraintStart_toEndOf="@+id/avatarView"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editProfileBtn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Ilyas Ishmullin"
-            android:textColor="@color/whiteColor"
-            android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/avatarView"
-            app:layout_constraintTop_toTopOf="@+id/avatarView" />
+            android:backgroundTint="#497FFF"
+            android:text="Edit Profile"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="ilya.ishmullin.24.04.2006@gmail.com"
-            android:textColor="@color/whiteColor"
-            android:textSize="10dp"
-            android:textStyle="normal"
-            app:layout_constraintStart_toEndOf="@+id/avatarView"
-            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/editProfileBtn"
+            tools:layout_editor_absoluteX="16dp">
 
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Mobile Developer"
-            android:textColor="@color/whiteColor"
-            android:textSize="10dp"
-            android:textStyle="normal"
-            android:typeface="monospace"
-            app:layout_constraintStart_toEndOf="@+id/avatarView"
-            app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Total Documents:"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart_profile"
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:outlineAmbientShadowColor="#497FFF"
+                android:outlineSpotShadowColor="#497FFF"
+                />
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        tools:layout_editor_absoluteX="16dp">
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Documents:"
-            android:layout_margin="16dp"
-            android:textStyle="bold"
-            android:textSize="24sp"/>
-
-
-        <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/pieChart_profile"
-            android:layout_width="match_parent"
-            android:layout_height="247dp" />
-
-    </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

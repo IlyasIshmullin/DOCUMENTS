@@ -3,10 +3,12 @@ package com.example.documents_rewrite.mainApplication.app.profile
 import android.graphics.Color
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat.invalidateOptionsMenu
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.documents_rewrite.R
 import com.example.documents_rewrite.databinding.ProfileFragmentBinding
@@ -45,6 +47,13 @@ class ProfileFragment : Fragment() {
             }
         )
 
+        /*binding.editProfileBtn.setOnClickListener {
+            val action = ProfileFragmentDi
+        }*/
+        binding.editProfileBtn.setOnClickListener {
+            val action = ProfileFragmentDirections.actionProfileFragmentToEditProfileFragment()
+            findNavController().navigate(action)
+        }
 
         initPieChart()
         setDataToPieChart()
@@ -117,7 +126,7 @@ class ProfileFragment : Fragment() {
 
     override fun onPrepareOptionsMenu(menu: Menu) {
         super.onPrepareOptionsMenu(menu)
-        menu.findItem(R.id.nav_search).setVisible(false)
+        menu.findItem(R.id.nav_search).isVisible = false
     }
 
     override fun onDestroyView() {

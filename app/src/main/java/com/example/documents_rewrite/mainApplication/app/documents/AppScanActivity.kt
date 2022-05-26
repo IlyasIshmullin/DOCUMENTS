@@ -38,6 +38,8 @@ class AppScanActivity : ScanActivity() {
 //        nameOfFile(scannerResults.imageFile)
 //        imageOfFile(scannerResults.imageFile)
         //sendFile(scannerResults.imageFile)
+        scannerResults.imageFile?.inputStream()
+
         finish()
     }
     /*public fun sendFile(file: File?) : (String, Int) {
