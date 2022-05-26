@@ -2,6 +2,7 @@ package com.example.documents_rewrite.mainApplication.app.documents
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -18,7 +19,11 @@ import com.example.documents_rewrite.R
 import com.example.documents_rewrite.databinding.DocumentsFragmentBinding
 import com.example.documents_rewrite.mainApplication.app.documents.docsLOgic.DocsAdapter
 import com.example.documents_rewrite.mainApplication.app.documents.docsLOgic.DocumentData
+import java.io.File
+import java.io.FileInputStream
 import java.io.InputStream
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class DocumentsFragment : Fragment() {
@@ -181,7 +186,7 @@ class DocumentsFragment : Fragment() {
         }
 
 
-        scan_btn.setOnClickListener {
+        /*scan_btn.setOnClickListener {
             Log.d("Documents", "SCAN_FAB")
             Toast.makeText(context, "scanner", Toast.LENGTH_LONG).show()
             try {
@@ -192,7 +197,7 @@ class DocumentsFragment : Fragment() {
             }
 
             onAddButtonClicked()
-        }
+        }*/
 
 
         download_btn.setOnClickListener {
@@ -213,25 +218,20 @@ class DocumentsFragment : Fragment() {
                 Toast.makeText(context, "Couldnt take a file", Toast.LENGTH_SHORT).show()
             }
             OpenFileResult.ErrorOpeningFile -> Log.e(TAG, "error opening file")
-            is OpenFileResult.FileWasOpened -> fileIsOpened(result.fileName, result.content)
+            is OpenFileResult.FileWasOpened -> fileIsOpened(result.fileName, result.stream)
         }
     }
 
-    private fun fileIsOpened(fileName: String, content: InputStream) {
-
+    private fun fileIsOpened(fileName: String, stream: InputStream) {
         //val fileInfo = requireView().findViewById<TextView>(R.id.openedTextInfo)
         //fileInfo.text = "Opened file $fileName"
-
-        //TODO: with migranov to send image to server
+        var src: Scanner = Scanner(stream)
+        Toast.makeText(context, src.nextLine() + " " + src.nextLine(), Toast.LENGTH_LONG).show()
         text.add(fileName)
         //val bufferedImageView = ImageI
         imageId.add(R.drawable.ic_launcher)
-        Toast.makeText(context, "File Opened Well", Toast.LENGTH_SHORT).show()
         recyclerViewUpdate()
-        content.close()
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
