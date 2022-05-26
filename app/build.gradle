@@ -36,27 +36,22 @@ android {
         viewBinding true
         dataBinding true
     }
-    packagingOptions {
-        pickFirst "**/lib/**"
-    }
-    rootProject.ext.ffmpegKitPackage = "video"
 }
 dependencies {
-    //implementation 'com.github.kuamanet:android-document-scanner:Tag'
-
-    //SCANNER FOR DOCUMENTS
-    implementation 'com.github.Krobys:document-scanner-fast:1.0.0'
-
-    //PIE CHART FOR PROFILE
+//
+////"    //PIE CHART FOR PROFILE
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0'
 
     //AVATAR VIEW USING IN PROFILE
     implementation "io.getstream:avatarview-coil:1.0.5"
 
-    implementation 'com.google.firebase:firebase-auth:21.0.3'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
-    implementation project(path: ':opencv')
+    implementation platform('com.google.firebase:firebase-bom:30.0.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth:21.0.4'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.android.datatransport:transport-runtime:3.0.1'
     def nav_version = "2.4.2"
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
@@ -68,4 +63,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // INTERNET
+    def okHttp_version = '4.8.0'
+    def retrofit_version = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okHttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttp_version"
+    implementation 'com.github.Krobys:document-scanner-fast:1.0.0'
 }
