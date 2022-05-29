@@ -182,9 +182,12 @@ class DocumentsFragment : Fragment(), SearchView.OnQueryTextListener {
             Toast.makeText(context, "scanner", Toast.LENGTH_LONG).show()
             try {
                 val intent = Intent(context, AppScanActivity::class.java)
+                Log.d("intent", "SHESH")
                 startActivity(intent)
             } catch (exception: Exception) {
-                Toast.makeText(context, "SCANNING", Toast.LENGTH_SHORT).show()
+                Log.e("shehs", exception.toString())
+                exception.printStackTrace()
+                Toast.makeText(context, "Dont SCANNING", Toast.LENGTH_SHORT).show()
             }
 
             onAddButtonClicked()
@@ -222,7 +225,7 @@ class DocumentsFragment : Fragment(), SearchView.OnQueryTextListener {
         //text.add(fileName)
         //val bufferedImageView = ImageI
         //imageId.add(R.drawable.ic_launcher)
-        Toast.makeText(context, "File Opened Well", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "File successfully sent to server", Toast.LENGTH_SHORT).show()
         Toast.makeText(context, Path, Toast.LENGTH_LONG).show()
         //recyclerViewUpdate()
         content.close()

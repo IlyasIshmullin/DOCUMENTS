@@ -12,13 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".mainApplication.app.documents.AppScanActivity"
+            android:exported="false" />
+
         <activity
             android:name=".IdentificationActivity"
             android:exported="false" />
         <activity
             android:name=".authorization.AuthorizationActivity"
             android:exported="false">
-
         </activity>
         <activity
             android:name=".SplashActivity"

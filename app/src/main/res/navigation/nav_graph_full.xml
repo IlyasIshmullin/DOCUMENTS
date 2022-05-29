@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/personalInfoProfileFragment"
-        android:name="com.example.documents_rewrite.PersonalInfoProfileFragment"
+        android:name="com.example.documents_rewrite.mainApplication.app.profile.PersonalInfoProfileFragment"
         android:label="fragment_personal_info_profile"
         tools:layout="@layout/fragment_personal_info_profile" />
     <fragment

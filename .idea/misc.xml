@@ -3,11 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_authorization.xml" value="0.24547101449275363" />
-        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_identificate.xml" value="0.264" />
-        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_main.xml" value="0.140625" />
-        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/activity_save_document.xml" value="0.24547101449275363" />
-        <entry key="..\:/Users/79996/StudioProjects/DOCUMENTS/app/src/main/res/layout/fragment_authorization.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_add_user_svgrepo_com.xml" value="0.156" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.22" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.22" />
@@ -31,6 +26,7 @@
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/about_documents_fragment.xml" value="0.2" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_app_scan.xml" value="0.1109375" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_authorization.xml" value="0.15670289855072464" />
+        <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_identificate.xml" value="0.19021739130434784" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/activity_main2.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/iishm/AndroidStudioProjects/DOCS/app/src/main/res/layout/app_bar_layout.xml" value="0.23385416666666667" />

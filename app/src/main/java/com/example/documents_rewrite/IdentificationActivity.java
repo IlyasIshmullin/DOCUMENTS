@@ -85,53 +85,53 @@ public class IdentificationActivity extends AppCompatActivity {
         binding.tvName.setText(profile.getString(APP_PREFERENCES_NAME, "Your name"));
         binding.buttonNumber0.setOnClickListener(view -> {
             pinEditor.getPinSymbol(0);
-            binding.buttonNumber0.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber0.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber0.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber0.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber1.setOnClickListener(view -> {
             pinEditor.getPinSymbol(1);
-            binding.buttonNumber1.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber1.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber1.setTextColor(R.color.md_theme_dark_outline);
+            //b/inding.buttonNumber1.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber2.setOnClickListener(view -> {
             pinEditor.getPinSymbol(2);
-            binding.buttonNumber2.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber2.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber2.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber2.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber3.setOnClickListener(view -> {
             pinEditor.getPinSymbol(3);
-            binding.buttonNumber3.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber3.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber3.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber3.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber4.setOnClickListener(view -> {
             pinEditor.getPinSymbol(4);
-            binding.buttonNumber4.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber4.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber4.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber4.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber5.setOnClickListener(view -> {
             pinEditor.getPinSymbol(5);
-            binding.buttonNumber5.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber5.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber5.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber5.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber6.setOnClickListener(view -> {
             pinEditor.getPinSymbol(6);
-            binding.buttonNumber6.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber6.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber6.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber6.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber7.setOnClickListener(view -> {
             pinEditor.getPinSymbol(7);
-            binding.buttonNumber7.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber7.setTextColor(R.color.md_theme_dark_onPrimary);
+            //binding.buttonNumber7.setTextColor(R.color.md_theme_dark_outline);
+            //binding.buttonNumber7.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber8.setOnClickListener(view -> {
             pinEditor.getPinSymbol(8);
-            binding.buttonNumber8.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber8.setTextColor(R.color.md_theme_dark_onPrimary);
+//            binding.buttonNumber8.setTextColor(R.color.md_theme_dark_outline);
+//            binding.buttonNumber8.setTextColor(R.color.md_theme_dark_onPrimary);
         });
         binding.buttonNumber9.setOnClickListener(view -> {
             pinEditor.getPinSymbol(9);
-            binding.buttonNumber9.setTextColor(R.color.md_theme_dark_outline);
-            binding.buttonNumber9.setTextColor(R.color.md_theme_dark_onPrimary);
+//            binding.buttonNumber9.setTextColor(R.color.md_theme_dark_outline);
+//            binding.buttonNumber9.setTextColor(R.color.md_theme_dark_onPrimary);
         });
 
     }

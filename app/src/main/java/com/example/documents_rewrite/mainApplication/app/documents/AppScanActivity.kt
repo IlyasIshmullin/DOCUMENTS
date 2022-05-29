@@ -22,7 +22,7 @@ class AppScanActivity : ScanActivity() {
         setContentView(R.layout.activity_app_scan)
         addFragmentContentLayout()
         Log.d("AppScanActivity", "OnCreate")
-        println("OnCreate AppScanActivity")
+//        println("OnCreate AppScanActivi")
         Toast.makeText(applicationContext, "onCreate", Toast.LENGTH_LONG).show()
 
         if(OpenCVLoader.initDebug())
@@ -34,7 +34,7 @@ class AppScanActivity : ScanActivity() {
 
     override fun onSuccess(scannerResults: ScannerResults) {
         Log.d("AppScanActivity", "OnSuccess")
-        Toast.makeText(applicationContext, "onSuccess", Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext, "successfully scanned and sent to server", Toast.LENGTH_LONG).show()
 //        nameOfFile(scannerResults.imageFile)
 //        imageOfFile(scannerResults.imageFile)
         //sendFile(scannerResults.imageFile)

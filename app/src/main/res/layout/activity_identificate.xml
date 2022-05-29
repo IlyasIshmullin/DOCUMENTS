@@ -216,7 +216,7 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NAME"
+        android:text="Ilyas"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button_number_2"
         app:layout_constraintEnd_toEndOf="parent"
