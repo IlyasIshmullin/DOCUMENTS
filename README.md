@@ -8,7 +8,6 @@ DOCUMENTS is a cloud-enabled, mobile-ready, offline-storage compatible service
 
 - documents scanner from phone using opencv
 - centralization of serving files
-- RSA hashing all files
 - fingerprint and face recognition
 - (soon) export documents as jpg, PDF
 
